@@ -3,13 +3,14 @@
         <meta charset = "UTF-8">
         <title>4 in a row</title>
         <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+        <link rel="stylesheet" type = "text/css" href = "css/style.css" />
     </head>
     <body>
 
     	<button id = "begin-game">
     		Start
     	</button>
-    
+
     	<div id = "game-scene">
             <div id = "play-area">
                 <div class = "stand-container left">
@@ -23,8 +24,10 @@
                     </div>
                 </div>
 
-        		<div id = "game-over">
-        		</div>
+                <div id = "game-board-underlay">
+                    <div id = "token" data-column = "0">
+                    </div>
+                </div>
             
             	<svg id = "game-board">
                     <defs>
@@ -53,14 +56,14 @@
     
         <div class = "table">
         </div>
-        
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="js/Game.js"></script>
         <script src="js/Board.js"></script>
         <script src="js/Space.js"></script>
         <script src="js/Player.js"></script>
         <script src="js/Token.js"></script>
-        <script src="js/app.js"></script>        
+        <script src="js/app.js"></script>
     </body>
 </html>
