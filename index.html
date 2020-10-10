@@ -5,6 +5,55 @@
         <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
     </head>
     <body>
+
+    	<button id = "begin-game">
+    		Start
+    	</button>
+    
+    	<div id = "game-scene">
+            <div id = "play-area">
+                <div class = "stand-container left">
+                    <div class = "stand-leg">
+                    </div>
+        
+                    <div class = "stand-foot">
+                    </div>
+        
+                    <div class = "stand-attachment left">
+                    </div>
+                </div>
+
+        		<div id = "game-over">
+        		</div>
+            
+            	<svg id = "game-board">
+                    <defs>
+                        <mask id="mask" x="0" y="0" width="548" height="472">
+                            <rect x = "0" y = "0" height = "472" width = "548" fill = "white">
+                        </mask>
+                    </defs>
+                    
+                    <rect id = "board-back" x="0" y="0" width="548" height="472" mask="url(#mask)" fill-opacity = "1" fill = "#5FCF80"/>
+            	</svg>
+    
+                <div class = "stand-container right">
+                    <div class = "stand-leg">
+                    </div>
+        
+                    <div class = "stand-foot">
+                    </div>
+        
+                    <div class = "stand-attachment right">
+                    </div>
+                </div>
+        
+                <div style = "clear:both"></div>
+            </div>
+        </div>
+    
+        <div class = "table">
+        </div>
+        
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="js/Game.js"></script>
